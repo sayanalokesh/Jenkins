@@ -6,9 +6,14 @@ Jenkins is your gateway to seamless automation and continuous integration. Follo
 
 Before we begin, make sure you have:
 
-- A Linux-based system (e.g., Ubuntu 22.04 LTS). Go to AWS account and launch an Instance using ubuntu as operating system.
-- Once you launch an Instance, you need to open 8080 port since the Jenkins is setup to run.
-- Once these steps performed, go to instance and connect to the instance.
+- A Linux-based system (e.g., Ubuntu 22.04 LTS). You can go to the AWS account and launch an Instance using Ubuntu as the operating system.
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/96aaaa47-0e34-4554-ac5d-ee5c643b0b87)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/52442664-d2cd-43d9-97d6-d8f158ac9b9a)
+
+- Once you launch an instance, you must open the 8080 port since Jenkins is set to run.
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/d6d43d5d-39a5-4a3d-b2a7-19145ec7121b)
+
+- Once these steps are performed, go to the instance and connect to the instance.
 
 ## Step 1: Update and Upgrade 🔄
 
@@ -83,5 +88,6 @@ To unlock Jenkins, you need the initial admin password. Retrieve it using this c
 ```bash
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/1c268480-02ee-443a-8b3c-a1555b4afea5)
 
 Now you're all set to configure Jenkins and start automating your workflows! Enjoy your journey with Jenkins! 🎉👩‍💻👨‍💻
