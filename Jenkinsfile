@@ -23,7 +23,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Add deployment steps to staging environment if tests pass
-                sh 'python3 app.py'  // Example deployment script
+                // sh 'python3 app.py'  // Example deployment script
+                sh 'pip install gunicorn'
+                sh 'nohup gunicorn -w 4 -b 0.0.0.0:8000 app:app > gunicorn.log 2>&1 &'
             }
         }
     }
