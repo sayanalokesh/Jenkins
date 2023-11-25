@@ -32,13 +32,13 @@ pipeline {
     
     post {
         success {
-            mail bcc: '', body: 'hello build is successful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'adarsh307kumar@gmail.com'
+            mail bcc: '', body: 'hello build is successful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'lokesh.sayana@gmail.com'
             // mail to: 'lokesh.sayana@email.com', 
             //      subject: 'Build Success', 
             //      body: 'Your Jenkins build succeeded!'
         }
         failure {
-            mail bcc: '', body: 'hello build is successful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'adarsh307kumar@gmail.com'
+            mail bcc: '', body: 'hello build is unsuccessful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'lokesh.sayana@gmail.com'
             // mail to: 'lokesh.sayana@email.com', 
             //      subject: 'Build Failure', 
             //      body: 'Your Jenkins build failed!'
