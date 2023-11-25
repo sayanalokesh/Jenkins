@@ -1,5 +1,5 @@
 from flask import Flask
-from gevent.pywsgi import WSGIServer
+# from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
@@ -16,6 +16,7 @@ def contactUs():
     return 'this is contact us page'
 
 if __name__ == '__main__':
+    app.run(port=3000, debug=True)
     # Use WSGI server (such as gevent) to run Flask app in the background
-    http_server = WSGIServer(('0.0.0.0', 3000), app)
-    http_server.serve_forever()
+    # http_server = WSGIServer(('0.0.0.0', 3000), app)
+    # http_server.serve_forever()
