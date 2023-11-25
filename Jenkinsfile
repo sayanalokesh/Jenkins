@@ -32,14 +32,16 @@ pipeline {
     
     post {
         success {
-            mail to: 'lokesh.sayana@email.com', 
-                 subject: 'Build Success', 
-                 body: 'Your Jenkins build succeeded!'
+            mail bcc: '', body: 'hello build is successful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'adarsh307kumar@gmail.com'
+            // mail to: 'lokesh.sayana@email.com', 
+            //      subject: 'Build Success', 
+            //      body: 'Your Jenkins build succeeded!'
         }
         failure {
-            mail to: 'lokesh.sayana@email.com', 
-                 subject: 'Build Failure', 
-                 body: 'Your Jenkins build failed!'
+            mail bcc: '', body: 'hello build is successful', cc: '', from: '', replyTo: '', subject: 'email form jenkins', to: 'adarsh307kumar@gmail.com'
+            // mail to: 'lokesh.sayana@email.com', 
+            //      subject: 'Build Failure', 
+            //      body: 'Your Jenkins build failed!'
         }
     }
 }
