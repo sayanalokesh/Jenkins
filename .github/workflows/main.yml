@@ -17,6 +17,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install python3-pip
+        sudo pip install flask
         sudo pip install streamlit
         sudo pip install pytest
   test:
@@ -30,13 +31,13 @@ jobs:
       run: |
         sudo apt update
         sudo apt install python3-pip
-        sudo pip install streamlit
+        sudo pip install flask
         sudo pip install pytest
         
     - name: build and test
       run: |
         # testing scripts
-        pytest test_calculator.py
+        pytest test_app.py
     
     - name: pushing code to staging
       run: |
@@ -55,7 +56,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: | 
           cd /home/ubuntu/
-          git clone https://github.com/AdarshIITDH/jenkins_aws.git
+          git clone https://github.com/sayanalokesh/Jenkins.git
           sudo apt install -y python3-pip
-          sudo pip install streamlit 
-          sudo streamlit run /home/ubuntu/jenkins_aws/calculator.py
+          # sudo pip install streamlit 
+          sudo python3 run /home/ubuntu/jenkins_aws/calculator.py
