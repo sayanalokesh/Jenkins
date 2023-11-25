@@ -58,4 +58,5 @@ jobs:
           cd /home/ubuntu/
           git clone https://github.com/sayanalokesh/Jenkins.git
           sudo apt install -y python3-pip
+          sudo pip install flask
           sudo python3 /home/ubuntu/Jenkins/app.py
