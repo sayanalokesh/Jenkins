@@ -45,7 +45,7 @@ jobs:
       if: ${{ github.ref == 'refs/heads/staging' && success() }}
       run: |
         git checkout staging .
-        git checkout main
+        git switch -c main  # Create and switch to main branch if it doesn't exist
         git add .
         git commit -m "Copying changes from staging to main"
         git push origin main
