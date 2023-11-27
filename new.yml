@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
+    - name: Set up Git identity
+      run: |
+        git config --global user.email "actions@example.com"
+        git config --global user.name "GitHub Actions"
+      
     - name: code checkout
       uses: actions/checkout@v2
       
