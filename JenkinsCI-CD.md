@@ -30,19 +30,21 @@ This Jenkins pipeline automates the build, test, and deployment of a Flask appli
 
 To support this pipeline, install the following plugins:
 
-- ![Alt text](image.png)
-- ![Alt text](image-1.png)
+- ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/fe102b73-0e09-4f70-a2d4-4e72cb1d52b6)
+- ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/0d524f70-af4b-4037-b475-3e3f3bca4862)
+
 
 #### Configuring Email Notifications
 
-Configure email notifications by navigating to `Manage Jenkins` > `System` > `E-mail Notification` (scroll to bottom) and set up as shown below:
+Configure email notifications by navigating to `Manage Jenkins` > `System` > `E-mail Notification` (scroll to the bottom) and set up as shown below:
 
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/4023a0d5-66e3-44a4-b3cc-61b5e17b5f34)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/09d0fecb-80bb-46be-ac34-6d283721140f)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/5500dabb-892e-45bd-8734-1b471aa4ff6a)
 
 If configured correctly, you'll see "Email was successfully sent."
-![Alt text](image-5.png)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/413c32fc-639c-41ec-be54-efc974c956cb)
+
 
 ### Pipeline Stages
 
@@ -55,12 +57,12 @@ The pipeline includes these stages:
 
 #### Screenshots
 
-1. ![Alt text](image-6.png)
-2. ![Alt text](image-7.png)
-3. ![Alt text](image-8.png)
-4. ![Alt text](image-9.png)
+1. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/d661ba08-9566-4036-816b-339ebcf19c92)
+2. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/bffc00bb-e4da-4919-aaae-1e18fb9d90d0)
+3. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/988bec3c-1cf1-4a8f-9645-d6ab096cd7e6)
+4. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/1b2cc8c6-e88c-477e-9ffe-4e2e8e8532ad)
 5. To generate Git syntax for Jenkinsfile, click on `Pipeline Syntax`.
-6. ![Alt text](image-10.png)
+6. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/59354843-7216-43b2-85c4-cb63fe848d18)
 
 ### Jenkinsfile Configuration
 
@@ -78,19 +80,20 @@ The Jenkinsfile defines pipeline stages and steps:
 
 Poll SCM checks for new commits in Git and automatically triggers the build process to deploy code to the EC2 server.
 
-![Alt text](image-11.png)
-![Alt text](image-12.png)
-![Alt text](image-13.png)
-![Alt text](image-14.png)
-![Alt text](image-15.png)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/b8d911b2-3b32-4299-9f0d-cec0b6fd9ccd)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/44db720d-f903-427c-b58f-be7aee0f9c7b)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/e9e4a009-af18-4512-9b40-0790d450c16d)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/a38f31c6-09b2-427c-a21c-a6128b9d40b1)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/373cd1fa-789f-454b-a892-e5315e7109d3)
 
 ### Email Notifications
 
 The pipeline sends email notifications to `lokesh.sayana@email.com` upon successful or failed builds, with customized subject lines and body content.
 
-![Alt text](image-16.png)
-![Alt text](image-17.png)
-![Alt text](image-18.png)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/2a2c298f-d1be-44f0-8ef0-f7f772cbae1f)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/2fcf4b86-0ff1-46c1-9060-8f073db8c999)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/8564462f-d15d-4951-b78c-31583ac9ddf2)
+
 
 ### Overall Workflow
 
