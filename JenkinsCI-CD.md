@@ -59,10 +59,12 @@ The pipeline includes these stages:
 
 1. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/d661ba08-9566-4036-816b-339ebcf19c92)
 2. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/bffc00bb-e4da-4919-aaae-1e18fb9d90d0)
-3. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/988bec3c-1cf1-4a8f-9645-d6ab096cd7e6)
-4. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/1b2cc8c6-e88c-477e-9ffe-4e2e8e8532ad)
-5. To generate Git syntax for Jenkinsfile, click on `Pipeline Syntax`.
-6. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/59354843-7216-43b2-85c4-cb63fe848d18)
+3. We need to click on `settings` in the GitHub repository, check for `Webhooks`, and give the instance `public IP address:8080/github-webhook/` as shown below.
+4. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/83c036b0-8a02-4f09-abd3-62c55251c0bc)
+5. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/988bec3c-1cf1-4a8f-9645-d6ab096cd7e6)
+6. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/1b2cc8c6-e88c-477e-9ffe-4e2e8e8532ad)
+7. To generate Git syntax for Jenkinsfile, click on `Pipeline Syntax`.
+8. ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/59354843-7216-43b2-85c4-cb63fe848d18)
 
 ### Jenkinsfile Configuration
 
