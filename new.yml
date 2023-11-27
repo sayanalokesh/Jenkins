@@ -1,75 +1,47 @@
-name: Ec2-deployment
+name: Staging to Main Deployment
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - staging
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
     
-    steps: 
-      # Add the checkout step here if it's not already present in your workflow
-      
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          repository: mohanvedase/CICD_GitActions
-          token: ${{ secrets.ACCESS_TOKEN }}  # Ensure you have the appropriate token
-          ssh-strict: true
-          persist-credentials: true
-          clean: true
-          fetch-depth: 1
-          lfs: false
-          submodules: false
-          set-safe-directory: true
-      
-      - name: Set up Git identity
-        run: |
-          git config --global user.email "actions@example.com"
-          git config --global user.name "GitHub Actions"
-        
-     
-    - name: code checkout
+    steps:
+    - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: install dependencies
+    - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt install python3-pip
-        sudo pip install flask
-        sudo pip install streamlit
-        sudo pip install pytest
-  
+        sudo apt install -y python3-pip
+        sudo pip install -r requirements.txt  # Install dependencies from requirements.txt
   test:
     runs-on: ubuntu-latest
-    needs: build  # Ensure that 'test' job runs after 'build' job
+    needs: build
     
-    steps:     
-    - name: code checkout
+    outputs:
+      tests_passed: ${{ steps.test_result.outputs.tests_passed }}
+
+    steps:
+    - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: install dependencies
+    - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt install python3-pip
-        sudo pip install flask
-        sudo pip install pytest
+        sudo apt install -y python3-pip
+        sudo pip install -r requirements.txt  # Install dependencies from requirements.txt
         
-    - name: build and test
+    - name: Run tests
+      id: test_result
       run: |
-        # testing scripts
+        # Execute your testing scripts, assuming pytest is used
         pytest test_app.py
-      
-    - name: pushing code to main
-      if: ${{ github.ref == 'refs/heads/staging' && success() }}
-      run: |
-        git checkout staging .
-        git switch -c main  # Create and switch to main branch if it doesn't exist
-        git add .
-        git commit -m "Copying changes from staging to main"
-        git push https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.git main
+        echo "::set-output name=tests_passed::true"  # Set the output if tests pass
+      continue-on-error: true  # Continue even if tests fail
         
   deploy:
     runs-on: ubuntu-latest
