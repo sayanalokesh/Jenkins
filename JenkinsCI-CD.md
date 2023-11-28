@@ -6,18 +6,19 @@
 
 2. [Prerequisites](#prerequisites)
 
-    a. [Plugins Installation](#plugins-installation)
+    a. [Instance creation](#instance-creation)
+    b. [Plugins Installation](#plugins-installation)
 
     b. [Configuring Email Notifications](#configuring-email-notifications)
 
-3. [Pipeline Stages](#pipeline-stages)
+4. [Pipeline Stages](#pipeline-stages)
 
     a. [Screenshots](#screenshots)
 
     b. [Jenkinsfile Configuration](#jenkinsfile-configuration)
-4. [Poll SCM](#poll-scm)
-5. [Email Notifications](#email-notifications)
-6. [Overall Workflow](#overall-workflow)
+5. [Poll SCM](#poll-scm)
+6. [Email Notifications](#email-notifications)
+7. [Overall Workflow](#overall-workflow)
 
 
 ## Overview
