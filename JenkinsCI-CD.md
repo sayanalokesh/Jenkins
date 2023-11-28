@@ -43,8 +43,8 @@ Configure email notifications by navigating to `Manage Jenkins` > `System` > `E-
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/c22f0ed7-75ec-4f31-952f-e08236baf8ce)
 Scroll to the bottom of the page and find App passwords as shown in the screenshot
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/66842aea-e328-447f-9818-97364166a947)
-![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/fd6eabe8-5158-4b82-8b74-5aef3eb57f32)
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/3573b380-bf52-4c22-ab26-0621a8555405)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/fd6eabe8-5158-4b82-8b74-5aef3eb57f32)
 
 Copy and paste the code in the password section.
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/5500dabb-892e-45bd-8734-1b471aa4ff6a)
