@@ -7,9 +7,10 @@
 2. [Prerequisites](#prerequisites)
 
     a. [Instance creation](#instance-creation)
+   
     b. [Plugins Installation](#plugins-installation)
 
-    b. [Configuring Email Notifications](#configuring-email-notifications)
+    c. [Configuring Email Notifications](#configuring-email-notifications)
 
 4. [Pipeline Stages](#pipeline-stages)
 
