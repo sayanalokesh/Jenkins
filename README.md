@@ -8,7 +8,7 @@ Automate Python web app testing and deployment using Jenkins:
 - **Notifications:** Enable alerts via email for build success or failure.
 - **Documentation:** You can find the document for the same [here](https://github.com/sayanalokesh/Jenkins/blob/main/JenkinsCI-CD.md).
 
-### Project 2: GitHub Actions CI/CD Pipeline for a Python App
+### Project 2: GitHub Actions CI/CD Pipeline for the same Flask App
 
 Implement GitHub Actions for workflow automation:
 - **Setup:** Utilize GitHub Actions in the provided Python repository, defining steps for Dependency Installation, Testing, Build, and Deployment.
