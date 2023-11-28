@@ -26,6 +26,14 @@ This Jenkins pipeline automates the build, test, and deployment of a Flask appli
 
 ### Prerequisites
 
+#### Instance creation
+
+We need to create an Instance and install Jenkins. You can install the Jenkins using this [file](https://github.com/sayanalokesh/Jenkins/blob/main/InstallationOfJenkins.md).
+
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/69602796-2bf8-4bab-b9e9-da4ad032bdad)
+
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/043d7033-ba9f-4ea0-bf94-30ab16a8e2b4)
+
 #### Plugins Installation
 
 To support this pipeline, install the following plugins:
