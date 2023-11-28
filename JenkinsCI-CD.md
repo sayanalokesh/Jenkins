@@ -40,6 +40,13 @@ Configure email notifications by navigating to `Manage Jenkins` > `System` > `E-
 
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/4023a0d5-66e3-44a4-b3cc-61b5e17b5f34)
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/09d0fecb-80bb-46be-ac34-6d283721140f)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/566c9828-1519-44c6-8faf-f62945b2883b)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/c22f0ed7-75ec-4f31-952f-e08236baf8ce)
+Scroll to the bottom of the page and find App passwords as shown in the screenshot
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/66842aea-e328-447f-9818-97364166a947)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/fd6eabe8-5158-4b82-8b74-5aef3eb57f32)
+![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/3573b380-bf52-4c22-ab26-0621a8555405)
+Copy and paste the code in the password section.
 ![image](https://github.com/sayanalokesh/Jenkins/assets/105637305/5500dabb-892e-45bd-8734-1b471aa4ff6a)
 
 If configured correctly, you'll see "Email was successfully sent."
